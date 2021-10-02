@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS File Links -->
+    <link rel="stylesheet" href="mainDesign.css">
+    <link rel="stylesheet" href="infoDesign.css">
+    <title>Diversity-The Dance Society</title>
+</head>
+<body>
+
+    <!-- ---------------------Up Button------------------------ -->
+    <a href="#" id="upButton" onclick="topFunction()"><img src="resources/up-arrow.png"></a>
+
+    <!-- ----------------------Header Section-------------------------- -->
+    <header id="header" class="clearFix">
+        <a href="hyperion.html">
+            <div class="hyperionLogo">
+                <img src="logos/HyperionLogo.jpeg">
+                <div>
+                    <h3>Hyperion</h3>
+                    <h4>The Cultural Society</h4>
+                </div>
+            </div>
+        </a>
+        <a href="http://pgdavcollege.edu.in/" class="pgdavLogo">
+            <img src="logos/PGDAVLogo.png">
+        </a>
+    </header>
+
+    <!-- ---------------------------------Quick Link Section------------------------------------ -->
+    <section id="quickLinks" class="clearFix">
+        <a onclick="openSideNav()" id="navButton"><img src="resources/menuBar.png"></a>
+
+        <div id="sideNav" class="sideNavList">
+            <a href="javascript:void(0)" class="closeButton" onclick="closeSideNav()">X</a>
+            <a href="#Introduction">About Us</a>
+            <a href="#CoreTeam">Core Team</a>
+            <a href="#Mentors">Mentors</a>
+            <a href="principal.html">Principal's Message</a>
+            <a href="#societyLinks" class="societyButton">Societies <i class="fa fa-caret-down"></i></a>
+                <div class="societiesSubSection">
+                    <a href="chanakya.html#leftSection">Chanakya</a>
+                    <a href="conundrum.html#leftSection">Conundrum</a>
+                    <a href="diversity.html#leftSection">Diversity</a>
+                    <a href="impressions.html#leftSection">Impressions</a>
+                    <a href="iris.html#leftSection">Iris</a>
+                    <a href="navrang.html#leftSection">Navrang</a>
+                    <a href="raaga.html#leftSection">Raaga</a>
+                    <a href="rapbeats.html#leftSection">Rapbeats</a>
+                    <a href="rudra.html#leftSection">Rudra</a>
+                    <a href="techwhiz.html#leftSection">Techwhiz</a>
+                </div>
+            <a href="achievements.html#ADiversity">Achievements</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="hyperion.html">Back To Hyperion</a>
+            <a href="http://pgdavcollege.edu.in/">Back To College Site</a>
+        </div>
+    </section>
+
+    <!-- -------------------------Aaghaz 2021 Banner--------------------------  -->
+    <section id="aaghazBanner" class="clearFix">
+        <a href="https://hyperionpgdav.github.io/aaghaz21"><img src="resources/aaghaz.png"></a>
+        <div class="soonText">April<br>16th & 17th</div>
+    </section>
+
+    <!-- ------------------------Banner and News Section--------------------------- -->
+    <section id="Banner" class="clearfix">
+
+        <div class="bannerSlider">
+            <div class="bSlider fade"><img src="hyperion/Banner/Hyperion_Logo.jpeg"></div> 
+            <div class="bSlider fade"><img src="hyperion/Banner/BannerImage1.jpg"></div>
+            <div class="bSlider fade"><img src="hyperion/Banner/BannerImage2.jpg"></div>
+            <div class="bSlider fade"><img src="hyperion/Banner/BannerImage3.jpg"></div>
+            <div class="bSlider fade"><img src="hyperion/Banner/BannerImage4.jpg"></div>
+            <div class="bSlider fade"><img src="hyperion/Banner/BannerImage5.jpg"></div>
+            <div class="bSlider fade"><img src="hyperion/Banner/BannerImage6.jpg"></div>
+            <div class="bSlider fade"><img src="hyperion/Banner/BannerImage7.jpg"></div>
+            <div class="bSlider fade"><img src="hyperion/Banner/BannerImage8.jpg"></div>
+            <div class="bSlider fade"><img src="hyperion/Banner/BannerImage9.jpg"></div>
+            <div class="bSlider fade"><img src="hyperion/Banner/BannerImage10.jpg"></div>
+            <div class="bSlider fade"><img src="hyperion/Banner/BannerImage11.jpg"></div>
+            <div class="bSlider fade"><img src="hyperion/Banner/BannerImage12.jpg"></div>
+            <div class="bSlider fade"><img src="hyperion/Banner/BannerImage13.jpg"></div>
+            <div class="bSlider fade"><img src="hyperion/Banner/BannerImage14.jpg"></div>
+
+            <a class="bPrev" onclick="plusBanner(-1)">&#10094</a>
+            <a class="bNext" onclick="plusBanner(1)">&#10095</a>
+        </div>
+        <!-- Notice Board Section -->
+        <div id="noticeBoard" >
+            <h3>Notice Board</h3>
+            <div>
+                <marquee direction="up" onmouseover="this.stop()" onmouseout="this.start()">
+                <a href="">Registration for Aaghaz' 21 begins</a>
+                <a href="https://hyperionpgdav.github.io/aaghaz21">Website for Aaghaz'21 launched</a>
+                <a href="">Dates of Aaghaz'21 are 16th & 17th April, 2021</a>
+                <a href="">Theme of Aaghaz'21 launched : Aviral - The Voyage Continues</a>
+                <a href="">Dates of Aaghaz 2021 to be announced soon</a>
+                <a href="">Launch of the Annual Magazine - Ankur</a>
+                <a href="">Hyperion launched its new Webpage</a>
+                </marquee>
+            </div>
+            <span><a href="notices.html">View All</a></span>
+        </div>
+    </section>
+
+    <!-- --------------------------Information Section------------------------------------------- -->
+    <section id="infoSection" class="clearFix">
+        <!-- Side Link Section -->
+        <section id="linksSection" class="clearFix">
+            <div class="tabContainers">
+                <div class="tab" id="Hyperion">
+                    <span>Cultural<br>Society</span>
+                    <a href="hyperion.html#leftSection">Hyperion</a>
+                </div>
+                <div class="tab" id="Chanakya">
+                    <span>Intellectual<br>Society</span>
+                    <a href="chanakya.html#leftSection">Chanakya</a>
+                </div>
+                <div class="tab" id="Conundrum">
+                    <span>Western Music<br>Society</span>
+                    <a href="conundrum.html#leftSection">Conundrum</a>
+                </div>
+                <div class="tab" id="Diversity">
+                    <span>Dance<br>Society</span>
+                    <a href="diversity.html#leftSection">Diversity</a>
+                </div>
+                <div class="tab" id="Impressions">
+                    <span>Fine Arts<br>Society</span>
+                <a href="impressions.html#leftSection">Impressions</a>
+                </div>
+                <div class="tab" id="Iris">
+                    <span>Film and Photography<br>Society</span>
+                <a href="iris.html#leftSection">Iris</a>
+                </div>
+                <div class="tab" id="Navrang">
+                    <span>Theatre<br>Society</span>                      
+                    <a href="navrang.html#leftSection">Navrang</a>
+                </div>
+                <div class="tab" id="Raaga">
+                    <span>Indian Music<br>Society</span>
+                    <a href="raaga.html#leftSection">Raaga</a>
+                </div>
+                <div class="tab" id="Rapbeats">
+                    <span>Hip Hop<br>Society</span>
+                    <a href="rapbeats.html#leftSection">Rapbeats</a>
+                </div>
+                <div class="tab" id="Rudra">
+                    <span>Street Play<br>Society</span>
+                <a href="rudra.html#leftSection">Rudra</a>
+                </div>
+                <div class="tab" id="Techwhiz">
+                    <span>I.T.<br>Society</span>
+                    <a href="techwhiz.html#leftSection">Techwhiz</a>
+                </div>
+            </div>
+        </section>
+
+    <!-- Description, Core Team and Mentors Section -->
+        <section id="leftSection" class="clearFix">
+            <!-- Society Heading and Log -->
+            <div id="Introduction"class="headingLogo clearFix">
+                <div class="logo1">
+                    <img src="logos/DiversityLogo.png">
+                </div>
+                <div class="infoHeading">
+                    <h2>Diversity</h2>
+                    <h3>The Dance Society</h3>
+                </div>
+                <div class="logo2">
+                    <img src="logos/HyperionLogo.jpeg">
+                </div>
+            </div>
+
+            <!-- Society Introdution -->
+            <div class="introParagraph clearFix">
+                <p style="font-weight: bold; font-size: 1.2em;">
+                    Jalsa
+                  </p>
+                  <p>
+                    Dance is the hidden language of the soul. Jalsa is much more than just dancing. Jalsa is not a society but a family- it's way of venting our emotions and expressions out and exploring your own self. It promotes happiness, discipline, responsibility, management, unity and a lot more through the medium of dance.
+                  </p>
+                  <p style="font-weight: bold; font-size: 1.2em;">            
+                    Natraj
+                  </p>
+                  <p>
+                    “YATHO HASTA THATHO DRISHTI, YATHO DRISHTI THATHO MANAH,  YATHO MANAH THATHO BHAAVA,  YATHO BHAAVA THATHO RASA”  - Where the hands are, there goes the sight; Where the sight is, there lies the mind; Where the mind fixes, there the feelings come and in accordance with feelings the enjoyment takes place. Indian Classical Dance - An eternal art having come from lord Shiva and divine mother Parvati down to earth to inspire and uplift the human society. It is meant to please the divine and elevate our consciousness. 
+                  </p>
+                  <p>
+                    NATRAJ- The Indian Classical dance society of P.G.D.A.V College is one of the finest societies consisting of members who are well trained in their art forms like Bharatanatyam, Odissi, kathak and Mohiniyattam. 
+                  </p>
+                  <p>
+                    Natraj comprises of different classical dance styles and it works towards bringing  together the grace, charm and rigour of each style. For all the Natraj members dance is worship, dance is an art, dance is an expression of emotions, it is a symbol of happiness and more importantly dance is their constant source of motivation.
+                  </p>
+                  <p style="font-weight: bold; font-size: 1.5em;">
+                    Spunk
+                    </p>
+                    <p>
+                        SPUNK is the Western dance society of PGDAV College (Delhi University). 
+                    </p>
+                    <p>
+                        Our society is popular for the street styles we perform such as hip hop, waacking, house, dancehall etc. 
+                    </p>
+                    <p>
+                        In every fest season we leave our mark in the Delhi Dance Circuit. Spunk won the best debut team
+                        award in the Delhi Dance Fever, also bagged 1st position in Jamia Hamdard and G.J BAJAJ University,
+                        2nd position in Shyam Lal College, DCAC and Acharya Narendra dev, and 3rd position in Vivekanand
+                        College and DME College.
+                    </p>
+                    <p>
+                        Every year we organise our Western Group Dance Competition and Street Dance Competition in which
+                        all the Delhi University teams participate. Last year our event was a huge success.
+                    </p>
+                    <p>
+                        Our teachers are a part of Kundu House Project, India's First House and Hip Hop Dance Crew and unreal
+                        crew.
+                    </p>
+                    <p>
+                        Our Alumni’s making us proud everywhere:-
+                    </p>
+                    <p>
+                        1. Abhishek Kashyap AKA ABC lock :- He's one of the finest locker in India. He has won many battles in
+                        locking. He also started taking classes and workshops in Delhi and outside Delhi also.
+                    </p>
+            </div>
+
+            <!-- Social Media Section -->
+            <div class="followUsHeading clearFix">
+                <h3>Follow Us At:</h3>
+            </div>
+
+            <div class="mediaHeading clearFix">
+                <div class="mediaHandle">
+                    <a href="https://www.instagram.com/jalsabhangracrew/"> 
+                        <img src="logos/InstagramLogo.png">
+                        <span>/jalsabhangracrew</span>
+                    </a>
+                </div>
+                <div class="mediaHandle">
+                    <a href="https://www.facebook.com/Jalsa-Bhangra-Crew/">
+                        <img src="logos/FacebookLogo.png">
+                        <span>/Jalsa-Bhangra-Crew</span>
+                    </a>
+                </div>
+            </div>
+            <div class="mediaHeading clearFix">
+                <div class="mediaHandle">
+                    <a href="https://www.instagram.com/natraj_pgdav/"> 
+                        <img src="logos/InstagramLogo.png">
+                        <span>/natraj_pgdav</span>
+                    </a>
+                </div>
+                <div class="mediaHandle">
+                    <a href="https://www.facebook.com/Natraj.pgdav/">
+                        <img src="logos/FacebookLogo.png">
+                        <span>/Natraj.pgdav</span>
+                    </a>
+                </div>
+            </div>
+            <div class="mediaHeading clearFix">
+                <div class="mediaHandle">
+                    <a href="https://www.instagram.com/spunkdancecrew/"> 
+                        <img src="logos/InstagramLogo.png">
+                        <span>/spunkdancecrew</span>
+                    </a>
+                </div>
+                <div class="mediaHandle">
+                    <a href="https://www.facebook.com/Spunk-Dance-Crew/">
+                        <img src="logos/FacebookLogo.png">
+                        <span>/Spunk-Dance-Crew</span>
+                    </a>
+                </div>
+            </div>
+            
+
+            <!-- -----------------Core Team Section------------ -->
+            <div id="CoreTeam" class="coreHeading clearFix">
+                <h3>Core Team</h3>
+            </div>
+            <div class="coreTeam clearFix">
+                <div class="president">
+                    <img src="diversity/coreteam/VaishaliKashyap_PRESIDENTDIVERSITY.jpg">
+                    <h3 class="name">Vaishali Kashyap</h3>
+                    <h4 class="post">President</h4>
+                </div>
+               <!-- <div class="vpresident">
+                    <img src="chanakya/coreteam/DeepaliDhiman_VicePresident_Chanakya.jpg">
+                    <h3 class="name">Deepali Dhiman</h3>
+                    <h4 class="post">Vice-President</h4>
+                </div>-->
+                <div class="secretary">
+                        <img src="diversity/coreteam/IshaniNag_VicePresident.jpg">
+                        <h3 class="name">Ishani Nag</h3>
+                        <h4 class="post">Vice-President</h4>
+                </div>
+               <div class="jsecretary">
+                        <img src="diversity/coreteam/ReshmiSMohan_CoordinatorNatraj (1).jpg">
+                        <h3 class="name">Reshmi S Mohan</h3>
+                        <h4 class="post">Coordinator<br>Natraj</h4>
+                </div>
+                <div class="treasurer">
+                        <img src="diversity/coreteam/Harshita_CoordinatorSpunk.jpg">
+                        <h3 class="name">Harshita</h3>
+                        <h4 class="post">Coordinator<br>Spunk</h4>
+                </div>
+                <div class="coordinator">
+                        <img src="diversity/coreteam/KaranSinghSidhu_CoordinatorJalsa.jpg">
+                        <h3 class="name">Karan Singh Sidhu</h3>
+                        <h4 class="post">Coordinator<br>Jalsa</h4>
+                </div>
+            </div>
+            <!-- -----------------Mentor Section------------ -->
+            <div id="Mentors" class="coreHeading clearFix">
+                <h3>Mentors</h3>
+            </div>
+            <div class="coreTeam clearFix">
+                <div class="vpresident">
+                    <img src="diversity/mentor/Dr. Pramita Mishra.jpg">
+                    <h3 class="name">Dr. Parmita Mishra</h3>
+                  <!-- <h4 class="post">Vice-President</h4>--> 
+                </div>
+
+               <!-- <div class="secretary">
+                        <img src="hyperion/coreteam/AbhayJain_JointSecretary.jpg">
+                        <h3 class="name">Abhay Jain</h3>
+                        <h4 class="post">Secretary</h4>
+                </div>
+                <div class="jsecretary">
+                        <img src="hyperion/coreteam/AbhayJain_JointSecretary.jpg">
+                        <h3 class="name">Abhay Jain</h3>
+                        <h4 class="post">Joint Secretary</h4>
+                </div>-->
+            </div>
+        </section>
+
+        <!-- ---------------------------Right Section--------------------------------- -->
+        <section id="rightSection" class="clearFix">
+            <div class="rightBox">
+                <div class="principalSection clearFix">
+                    <h3>Principal's Message</h3>
+                    <div class="principalImage">
+                        <img src="hyperion/principal_message/principal.jpg">
+                    </div>
+                    <div class="principalMessage">
+                        <p>
+                        PGDAV college is one of the premiere institutes of Delhi University.
+                        As many of you must be knowing already, my principalship has just started 
+                        but the heritage of this esteemed position goes decades back.
+                        </p>
+                        <p >
+                        We are guided by the vision of Swami Dayanand Saraswati where culture and 
+                        discipline are given utmost importance. 
+                        </p>                      
+                        <p>
+                            <a href="principal.html">Read More</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="achievementsSection clearFix">
+                    <h3>Achievements</h3>
+                    <div class="achievementGallery">
+                        <div class="aSlide"><img src="resources/Blank.jpg"></div>
+                
+                            <a class="aPrev" onclick="plusAchieve(-1)">&#10094;</a>
+                            <a class="aNext" onclick="plusAchieve(1)">&#10095;</a>
+                        
+                    </div>
+                    <h4>Achiever's Gallery</h4>
+                    <div class="achievementList">
+                        <ul>
+                        <marquee direction="up" onmouseover="this.stop()" onmouseout="this.start()">    
+                            <li>Parth Matlani was the Winner of the  Sync with Dance , Navprayas NGO</li>
+                                <li>Utkarsh Sinha won Third Prize in Sync with Dance , Navprayas NGO</li>
+                                <li>Utkarsh Sinha was Second in Qu'art'antine , Believe in smiles NGO</li>
+                                <li>Utkarsh Sinha won Third Prize in Jamai Vu, Ramjas College</li>
+                                <li>Utkarsh Sinha won Second Prize in Magnum , Bhim Rao Ambedkar College</li>
+                                <li>Utkarsh Sinha was the Winner of talent.maniac, Talent maniac</li>
+                                <li>Utkarsh Sinha was the Winner of Quarantance , University College of Medical Sciences Delhi</li>
+                        </marquee>
+                        </ul>
+                        <a href="achievements.html#ADiversity">View All</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <!-- -------------------------------Society Gallery Section-------------------------------- -->
+    <section id="societyGallerySection" class="clearFix">
+        <div class="societyGallery clearFix">
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery1.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery2.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery3.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery4.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery5.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery6.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery7.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery8.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery9.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery10.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery11.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery12.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery13.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery14.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery15.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery16.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery17.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery18.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery19.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery20.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery21.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery22.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery23.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery24.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery25.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery26.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery27.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery28.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery29.jpg"></div> 
+            <div class="societySlider fade"><img src="diversity/gallery/Gallery30.jpg"></div> 
+            
+            
+            
+            <a class="socPrev" onclick="plusSociety(-1)">&#10094;</a>
+            <a class="socNext" onclick="plusSociety(1)">&#10095;</a>
+        </div>
+    </section>
+  
+
+    <!-- --------------------------Society Section--------------------------------------------- -->
+    <section id="societyLinks" class="clearFix">
+        <div class="heading">
+            <h3>Societies</h3>
+        </div>
+        <div class="societySection">
+            <a href="chanakya.html#leftSection" class="societyColumn" id="chanakya">
+                <div class="societyLogo"><img src="logos/ChanakyaLogo.jpg"></div>
+                <h3>Chanakya</h3>
+                <h4 class="overlay">The </br>Intellectual</br> Society</h4>
+            </a>
+            <a href="conundrum.html#leftSection" class="societyColumn" id="conundrum">
+                <div class="societyLogo"><img src="logos/ConundrumLogo.jpg"></div>  
+                <h3>Conundrum</h3>
+                <h4 class="overlay">The</br> Western Music</br> Society</h4>                  
+            </a>
+            <a href="diversity.html#leftSection" class="societyColumn" id="diversity">
+                <div class="societyLogo"><img src="logos/DiversityLogo.png"></div>
+                <h3>Diversity</h3>
+                <h4 class="overlay">The</br> Dance</br> Society</h4>
+            </a>
+            <a href="impressions.html#leftSection" class="societyColumn" id="impressions">
+                <div class="societyLogo"><img src="logos/ImpressionsLogo.jpeg"></div>
+                <h3>Impressions</h3>
+                <h4 class="overlay">The </br>Fine Arts</br> Society</h4>
+            </a>
+            <a href="iris.html#leftSection" class="societyColumn" id="iris">
+                <div class="societyLogo"><img src="logos/IrisLogoPng.png"></div>
+                <h3>Iris</h3>
+                <h4 class="overlay">The</br> Film and </br>Photography </br>Society</h4>
+            </a>
+            <a href="navrang.html#leftSection" class="societyColumn" id="navrang">
+                <div class="societyLogo"><img src="logos/NavrangLogo.png"></div>
+                <h3>Navrang</h3>
+                <h4 class="overlay">The </br>Theatre </br>Society</h4>
+            </a>
+            <a href="raaga.html#leftSection" class="societyColumn" id="raaga">
+                <div class="societyLogo"><img src="logos/RaagaLogo.jpg"></div>
+                <h3>Raaga</h3>
+                <h4 class="overlay">The</br> Indian Music </br>Society</h4>
+            </a>
+            <a href="rapbeats.html#leftSection" class="societyColumn" id="rapbeats">
+                <div class="societyLogo"><img src="logos/RapbeatsLogo.jpg"></div>
+                <h3>Rapbeats</h3>
+                <h4 class="overlay">The </br>Hip Hop</br> Society</h4>
+            </a>
+            <a href="rudra.html#leftSection" class="societyColumn" id="rudra">
+                <div class="societyLogo"><img src="logos/RudraLogo.png"></div>
+                <h3>Rudra</h3>
+                <h4 class="overlay">The </br>Street Play</br> Society</h4>
+            </a>
+            <a href="techwhiz.html#leftSection" class="societyColumn" id="techwhiz">
+                <div class="societyLogo"><img src="logos/TechwhizLogo.jpeg"></div>
+                <h3>Techwhiz</h3>
+                <h4 class="overlay">The</br> I.T. </br>Society</h4>
+            </a>
+        </div>
+    </section>
+
+    <!-- --------------------------Gallery Section--------------------------------------------- -->
+    <section id="galleryIntro" class="clearFix">
+        <div class="heading">
+            <h3>Gallery</h3>
+        </div>
+        <div class="galleryRow">
+            <div class="galleryColumn">
+                <div class="slide1 fade"><img src="hyperion/gallery/Aaghaz20/Gallery29.jpg"></div>
+                <div class="slide1 fade"><img src="hyperion/gallery/Aaghaz20/Gallery22.jpg"></div>
+                <div class="slide1 fade"><img src="hyperion/gallery/Aaghaz20/Gallery18.jpg"></div>
+                <div class="slide1 fade"><img src="hyperion/gallery/Aaghaz20/Gallery14.jpg"></div>
+                <div class="slide1 fade"><img src="hyperion/gallery/Aaghaz20/Gallery31.jpg"></div>
+                <div class="slide1 fade"><img src="hyperion/gallery/Aaghaz20/Gallery2.jpg"></div>
+                
+                <a class="prev" onclick="plusSlides1(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides1(1)">&#10095</a>
+                <h4>Aaghaz' 20</h4>
+            </div>
+            <div class="galleryColumn">
+                <div class="slide2 fade"><img src="hyperion/gallery/Ebullience20/Gallery15.jpg"></div>
+                <div class="slide2 fade"><img src="hyperion/gallery/Ebullience20/Gallery5.jpg"></div>
+                <div class="slide2 fade"><img src="hyperion/gallery/Ebullience20/Gallery10.jpg"></div>
+                <div class="slide2 fade"><img src="hyperion/gallery/Ebullience20/Gallery12.jpg"></div>
+                <div class="slide2 fade"><img src="hyperion/gallery/Ebullience20/Gallery1.jpg"></div>
+
+                <a class="prev" onclick="plusSlides2(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides2(1)">&#10095</a>
+                <h4>Ebullience' 20</h4>
+            </div>
+            <div class="galleryColumn">
+                <div class="slide3 fade"><img src="hyperion/gallery/Abhivyakti20/Gallery11.jpg"></div>
+                <div class="slide3 fade"><img src="hyperion/gallery/Abhivyakti20/Gallery12.jpg"></div>
+                <div class="slide3 fade"><img src="hyperion/gallery/Abhivyakti20/Gallery32.jpg"></div>
+                <div class="slide3 fade"><img src="hyperion/gallery/Abhivyakti20/Gallery18.jpg"></div>
+                <div class="slide3 fade"><img src="hyperion/gallery/Abhivyakti20/Gallery15.jpg"></div>
+                <div class="slide3 fade"><img src="hyperion/gallery/Abhivyakti20/Gallery22.jpg"></div>
+
+                <a class="prev" onclick="plusSlides3(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides3(1)">&#10095</a>
+                <h4>Abhivyakti' 20</h4>
+            </div>
+            <div class="galleryColumn">
+                <div class="slide4 fade"><img src="hyperion/gallery/Exploranza19/Gallery16.jpg"></div>
+                <div class="slide4 fade"><img src="hyperion/gallery/Exploranza19/Gallery4.jpg"></div>
+                <div class="slide4 fade"><img src="hyperion/gallery/Exploranza19/Gallery1.jpg"></div>
+                <div class="slide4 fade"><img src="hyperion/gallery/Exploranza19/Gallery6.jpg"></div>
+                <div class="slide4 fade"><img src="hyperion/gallery/Exploranza19/Gallery15.jpg"></div>
+                <div class="slide4 fade"><img src="hyperion/gallery/Exploranza19/Gallery25.jpg"></div>
+
+                <a class="prev" onclick="plusSlides4(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides4(1)">&#10095</a>
+                <h4>Exploranza' 19</h4>
+            </div>
+        </div>
+        <div class="galleryLink">
+            <a href="gallery.html">View All</a>
+        </div>
+    </section>
+    <!-- -----------------------------------------Footer Section------------------------------------- -->
+    <footer id="footer" class="clearFix">
+        <div class="leftFooter">
+            Created by TechWhiz</br>(Tarun Chawla, Prasoon Jain</br>Himanshu Sharma and Anjali Kathait)    
+        </div>
+        <a href="techwhiz.html#leftSection"><img src="logos/techwhizlogo2.jpeg"></a>
+        <!-- --------------Quick Links------------ -->
+        <div class="rightFooter">
+            <a href="http://pgdavcollege.edu.in/Viewtopics.aspx?MenuId=DISCLAIMER_487">Disclaimer</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </footer>
+    <!-- -------------------JavaScript Files--------------  -->
+    <script src="mainScript.js"></script>
+</body>
+</html>

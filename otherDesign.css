@@ -1,0 +1,347 @@
+
+/* ----------------------------------------Heading type 1------------------------------------ */
+.gallHeading1 h2{
+    font-size: 3rem;
+    text-align: center;
+    color: #ffffff;
+    background-image: url(resources/back3.jpg);
+    padding: 0.5rem 0;
+}
+.breadCrumps{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2.5rem;
+}
+
+
+.breadCrumps{
+    background-color:  #eee;
+    padding: 0.5rem 1rem;
+}
+.breadCrumps ul{
+    list-style: none;
+    font-size: 0rem;
+}
+.breadCrumps ul li{
+    display: inline-block;
+}
+.breadCrumps ul li+li:before {
+    padding: 0.45rem;
+    color: black;
+    content: "/\00a0";
+}
+.breadCrumps ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #0275d8;
+}
+.breadCrumps ul li a:hover{
+    text-decoration: underline;
+    color: #01447e;
+}
+.breadCrumps ul li a:active{
+    color: #000000;
+}
+
+.gallSection1{
+    margin: 0%;
+    
+}
+.gallSection1 h3{
+    background-image: url(resources/back2.webp);
+    color: #ffffff;
+    margin-top: 0.25rem;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.5rem 0rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.imageRow {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+
+  
+/* CSS for Principal Message page */
+.message{
+  width: 100%;
+  overflow: hidden;
+}
+.message > a{
+  font-size: 1.7vw; 
+  margin: 1vw;
+}
+@media screen and (max-width: 700px){
+  .message > a{
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 450px){
+  .message > a{
+    font-size: 3.5vw;
+    margin: 1.3vw;
+  }
+}
+.message > div{
+  width: 95%;
+  margin: 2.5%;
+  object-fit: contain;
+  text-align: justify;
+}
+.message > div > h2{
+  font-size: 3vw; 
+  text-transform: capitalize;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  margin: 1rem 0rem;
+}
+.message > div > img{
+  display: block;
+  max-width: 50%;
+ max-height: 50%;
+ margin: auto;
+}
+.message > div > p{
+  font-size: 1.2vw;
+  margin: 1vw 2vw;
+}
+@media screen and (max-width: 1000px)
+{
+  .message > div > p{
+    font-size: 1.7vw;
+  }
+}
+@media screen and (max-width: 500px)
+{
+  .message > div > p{
+    font-size: 2.2vw;
+  }
+}
+/* CSS for Notices Board Page */
+.notices{
+  width: 96%;
+  margin: 2%;
+  overflow: hidden;
+}
+.notices > a{
+  font-size: 1.7vw; 
+}
+.notices > h2{
+    font-size: 2rem;
+    background-color: #000000;
+    color: #ffffff;
+    border-bottom: #3d3d3d 0.5rem solid;
+    margin-top: 1rem;
+}
+.notices >ul{
+  background-color: #919191;
+}
+.notices >ul >li{
+  list-style-type: disc;
+  padding-left: 0.75rem;
+}
+.notices >ul >li >a{
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  font-size: 1rem;
+  padding: 0.5rem 0.2rem;
+  border-bottom: #3d3d3d dotted 2px;
+}
+@media screen and (max-width: 700px){
+  .notices > a{
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 450px){
+  .notices > a{
+    font-size: 3.5vw;
+    margin: 1.3vw;
+  }
+}
+/* CSS for Achievement Page */
+.achievementPanel{
+  width: 100%;
+}
+.achievementPanel > h2{
+  background-image: url(resources/back3.jpg);
+  font-size: 3vw;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.05rem;
+  padding: 0.25vw 0;
+  margin: 1.5% 0%;
+}
+@media screen and (max-width: 700px){
+  .achievementPanel > h2{
+    font-size: 4vw;
+  }
+}
+.achievementAccordion{
+  width: 95%;
+  margin: 2.5%;
+}
+.accordion 
+{
+    background-color: #dddddd;
+    color: #000000;
+    cursor: pointer;
+    padding: 1vw;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.5vw;
+    transition: 0.4s;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0.5rem 0.2rem 0.5rem #666666;
+}
+@media screen and (max-width: 900px){
+  .accordion{
+    font-size: 2.2vw;
+  }
+}
+@media screen and (max-width: 700px){
+  .accordion{
+    font-size: 3vw;
+  }
+}
+.open, .accordion:hover 
+{
+    color: #ffffff;
+}
+
+
+.chanakyaCol.open, .chanakyaCol:hover
+{
+    background-color: #d90000;
+}
+.conundrumCol.active, .conundrumCol:hover
+{
+    background-color: #969292;
+}
+.diversityCol.active, .diversityCol:hover
+{
+    background-color: #000000;
+}
+.impressionsCol.active, .impressionsCol:hover
+{
+    background-color: #0b9dd6;
+}
+.irisCol.active, .irisCol:hover
+{
+    background-color: #06d40a;
+}
+.navrangCol.active, .navrangCol:hover
+{
+    background-color: #b506d4;
+}
+.raagaCol.active, .raagaCol:hover
+{
+    background-color: #ed0063;
+}
+.rapbeatsCol.active, .rapbeatsCol:hover
+{
+    background-color: #f56600;
+}
+.rudraCol.active, .rudraCol:hover
+{
+    background-color: #00cc36;
+}
+.techwhizCol.active, .techwhizCol:hover
+{
+    background-color: #0060e6;
+}
+.accordion:after 
+{
+    content: '\002B';
+    color: #000;
+    font-weight: bold;
+    float: right;
+    margin-left: 0.8vw;
+}
+.open:after  
+{
+    content: "\2212";
+    color:#ffffff;
+}
+.panel{
+  max-height: 0;
+  overflow: hidden;
+  padding: 0.5% 3%;
+  transition: max-height 0.2s ease-out;
+}
+.panel ul{
+  background-color: #f1f1f1;
+}
+.panel ul li{
+  list-style: circle inside;
+  text-align: 1.2rem;
+  border-bottom: dotted 1px #acacac;
+  padding: 0.5rem;
+}
+/* Contact Page CSS */
+.contact > h3{
+  font-size: 2rem;
+  text-align: center;
+}
+.contact > p > img{
+  width: 3vw;
+  margin-right: 1.5vw;
+}
+.contact > p{
+  font-size: 1.5vw;
+}
+.contact > p >a{
+  font-size: 1.5vw;
+}
+@media screen and (max-width: 500px){
+  .contact > p > img{
+    width: 5vw;
+  }
+  .contact > p{
+    font-size: 2vw;
+  }
+  .contact > p >a{
+    font-size: 2.5vw;
+  }
+}
