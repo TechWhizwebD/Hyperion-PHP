@@ -1,0 +1,673 @@
+/*Entire page CSS*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.clearFix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+body{
+    position: relative;
+}
+
+/* CSS for Back To Top Button */
+#upButton{
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right: 1.5rem;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#upButton > img{
+    width: 8vh;
+}
+@media screen and (max-width: 800px){
+    #upButton > img{
+        width: 5.5vh;
+    }   
+}
+
+/* CSS for Header Section */
+#header{
+    background-color: #511c66;
+    padding: 1rem;
+    object-fit: contain;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+#header > a{
+    text-decoration: none;
+    display: inline-block;
+} 
+.hyperionLogo{
+    display: block;    
+}
+.hyperionLogo >img{
+    display: inline-block;
+    width: 9vw;
+    
+}
+.hyperionLogo > div{
+    display: inline-block;
+    color: #ffffff;
+    align-items: baseline;
+    margin-left: 0.5vw;
+}
+.hyperionLogo > div > h3{
+    font-size: 3.3vw;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+.hyperionLogo > div > h4{
+    font-size: 2vw;
+    text-transform: capitalize;
+    font-weight: lighter;
+}
+.pgdavLogo{
+    object-fit: scale-down;
+    width: 25vw;
+    float: right;
+}
+.pgdavLogo > img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    object-fit: scale-down;
+}
+@media screen and (max-width: 450px){
+    .hyperionLogo > img{
+        width: 10vw;
+    }
+    .hyperionLogo > div > h3{
+        font-size: 3.6vw;
+    }
+    .hyperionLogo > div > h4{
+        font-size: 2.4vw;
+    }
+    .pgdavLogo{
+        width: 30vw;
+    }
+}
+
+/* CSS for Collasped Quick Links */
+#quickLinks{
+    display: none;
+
+}
+@media screen and (max-width: 850px){
+    #quickLinks{
+        display: block;
+        background-color: #511c66;
+        object-fit: contain;
+        padding: 0rem 1rem;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        z-index: 55;
+    }
+    #quickLinks > a{
+        display: inline-block;
+        text-align: center;
+        padding: 0rem 0.4rem;
+        border-left: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+    }
+    #quickLinks > a:hover{
+        background-color: rgba(2, 2, 2, 0.5);
+    }
+    #quickLinks > a > img{
+        width: 2rem;
+    }
+    #quickLinks > div.sideNavList{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 0;
+        background-color: #111111;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    #quickLinks > div.sideNavList >a{
+        padding: 0.5rem 0.5rem 0.5rem 2rem;
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+    }
+    #quickLinks > div.sideNavList >a:hover{
+        color: #f1f1f1;
+    }
+    #quickLinks > div.sideNavList >a.closeButton{
+        position: absolute;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        top: 0;
+        right: 1rem;
+        font-size: 2.5rem;
+    }
+
+    /* CSS for Society Section */
+    #quickLinks > div.sideNavList > div.societiesSubSection{
+        display: none;
+        background-color: #262626;
+        padding-left: 0.5rem;
+    }
+    #quickLinks > div.sideNavList > div.societiesSubSection > a{
+        display: block;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 0.5rem 0.5rem 0.5rem 2rem;
+    }
+    #quickLinks > div.sideNavList > div.societiesSubSection > a:hover{
+        background-color: #e1e1e1;
+        color: #000000;
+    }
+    .active{
+        background-color: #511c66;
+    }
+}
+
+/* Responsive Quick Links */
+@media screen and (max-width: 500px){
+    #quickLinks{
+        padding: 0rem 0.2rem;
+    }
+}
+
+/* Aaghaz Banner */
+#aaghazBanner{
+    position: relative;
+    margin: 0.5rem;
+    background-image: url(resources/back1.jpg);
+    object-fit: contain;
+}
+#aaghazBanner > a > img{
+    width: 50vw;
+    margin-left: 1rem;
+}
+#aaghazBanner > .soonText{
+    bottom: 4%;
+    right: 4%;
+    font-size: 4vw;
+    position: absolute;
+    text-align: right;
+    color: #f1f1f1;
+    font-weight: bold;
+}
+@media screen and (max-width: 850px){
+    #aaghazBanner > img{
+        width: 60vw;
+    }
+}
+
+/* CSS for Banner and Notice Board */
+#Banner{
+    position: relative;
+    width: 100%;
+    height: 40vw;
+    object-fit: scale-down;
+    overflow: hidden;
+}
+.bannerSlider{
+    position: relative;
+    width: 94%;
+    height: 90%;
+    margin: 1.5% 3%;
+}
+.bPrev, .bNext{
+    position: absolute;
+    font-size: 3vw;
+    color: #000000;
+    padding: 3vw;
+    border-radius: 1.5vw;
+    top: 37%;
+    cursor: pointer;
+}
+.bPrev{
+    left: 2%;
+}
+.bNext{
+    right: 2%;
+}
+.bPrev:hover, .bNext:hover{
+    background-color: #616161;
+    color: #ffffff;
+}
+.bSlider{
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    border-radius: 2vw;
+    overflow: hidden;
+    text-align: center;
+    background-color: #a2a2a2;
+}
+.bSlider > img{
+    max-height: 100%;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+}
+/* Notice Board */
+#noticeBoard{
+    position: absolute;
+    top: 12%;
+    right: 15%;
+    width: 30vw;
+    height: 30vw;
+    background-color: rgba(0,0,0, 0.75);
+    border-radius: 3vw;
+    z-index: 10;
+    overflow: hidden;
+}
+#noticeBoard > h3{
+    width: 28vw;
+    font-size: 3vw;
+    padding: 6% 6%  1% 6% ;
+    color: #ffffff;
+    font-weight: light;
+    letter-spacing: 0.01rem;
+    text-transform: uppercase;
+}
+#noticeBoard > div{
+    width: 28vw;
+    height: 20vw;
+    margin: 1% 5%;
+    border-top: #ffffff solid 0.5vw;
+    overflow: hidden;
+}
+#noticeBoard > div  a{
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: #919191 1px solid;
+    font-size: 1.5vw;
+    padding: 1vw;
+}
+#noticeBoard > span{
+    position: absolute;
+    right: 7%;
+    bottom: 6%;
+}
+#noticeBoard > span > a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5vw;
+}
+@media screen and (max-width: 600px){
+    #noticeBoard{
+        width: 35vw;
+        height: 35vw;
+        top: 1%;
+        align-items: center;
+    }
+    #noticeBoard > div{
+        width: 32vw;
+        height: 23vw;
+    }
+    #noticeBoard > span > a{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 850px){
+    #noticeBoard > div  a{
+        font-size: 0.9rem;
+    }
+}
+
+/* ----------------------------Society Section--------------------------------------- */
+#chanakya{
+    background-color: #56f5ad;
+}
+#conundrum{
+    background-color: #9d87f5;
+}
+#diversity{
+    background-color: #ff5050;
+}
+#impressions{
+    background-color: #ffc782;
+}
+#iris{
+    background-color: #4f524c;
+}
+#navrang{
+    background-color: #ff6e92;
+}
+#raaga{
+    background-color: #dbff6e;
+}
+#rapbeats{
+    background-color: #80ff88;
+}
+#rudra{ 
+    background-color: #adadad;
+}
+#techwhiz{
+    background-color: #6e6eff;
+}
+
+/* heading color*/
+#chanakya >h3{
+    background-color: #12d87f;
+}
+#conundrum >h3{
+    background-color: #8263ff;
+}
+#diversity >h3{
+    background-color: #ff2424;
+}
+#impressions >h3{
+    background-color: #ffae4c;
+}
+#iris >h3{
+    background-color: #2d2e2b;
+}
+#navrang >h3{
+    background-color: #ff3769;
+}
+#raaga >h3{
+    background-color: #cfff41;
+}
+#rapbeats >h3{
+    background-color: #2eff3c;
+}
+#rudra >h3{ 
+    background-color: #6d6d6d;
+}
+#techwhiz >h3{
+    background-color: #3a3aff;
+}
+
+.societySection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.societyColumn{
+    text-decoration: none;
+    width: 16vw;
+    height: 21vw;
+    margin: 1vw;
+    overflow: hidden;
+    border-radius: 1vw;
+    position: relative;
+}
+.societyColumn > .societyLogo{
+    height: 80%;
+    object-fit: contain;
+    vertical-align: middle;
+    text-align: center;
+}
+.societyColumn > .societyLogo >img{
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+    
+}
+.societyColumn >h3{
+    text-align: center;
+    padding-top: 0.9vw;
+    color: #ffffff;
+    font-size: 2vw;
+    text-transform: uppercase;
+    height: 20%;
+}
+.overlay{
+    background: #000000;
+    opacity: 0;
+    color: #f1f1f1;
+    text-align: center;
+    font-size: 1.5vw;
+    text-transform: capitalize;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 1vw;
+
+}
+.societyColumn:hover .overlay{
+    opacity: 1;
+}
+@media screen and (max-width: 700px){
+    .societyColumn{
+        width: 20vw;
+        height: 27vw;
+    }
+    .societyColumn >h3{
+        font-size: 2.5vw;
+        padding-top: 1.2vw;
+    }
+    .overlay{
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width: 500px){
+    .societyColumn{
+        width: 24vw;
+        height: 33vw;
+    }
+    .societyColumn >h3{
+        font-size: 3.2vw;
+        padding-top: 1.4vw;
+    }
+    .overlay{
+        font-size: 2.5vw;
+    }
+}
+/* ----------------------------Gallery Section--------------------------------------- */
+#galleryIntro{
+    width: 100%;
+}
+/* Gallery Heading */
+.heading > h3{
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+}
+@media screen and (max-width: 850px){
+    .heading > h3{
+        font-size: 5vw;
+    }
+}
+/* Gallery Page Link */
+.galleryLink > a{
+    float: right;
+    margin-right: 1rem;
+    font-size: 1.8vw;
+}
+@media screen and (max-width: 700px){
+    .galleryLink > a{
+        font-size: 2.2vw;
+    }
+}
+@media screen and (max-width: 400px){
+    .galleryLink > a{
+        font-size: 2.7vw;
+    }
+}
+
+/* Gallery Row CSS*/
+.galleryRow{
+    width: 100%;
+}
+.galleryColumn{
+    width: 25%;
+    float: left;
+    position: relative;
+}
+.galleryColumn > h4{
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+}
+.slide1, .slide2, .slide3, .slide4{
+    display: none;
+    width: 90%;
+    margin: 5%;
+    height: 20vw;
+    object-fit: scale-down;
+    text-align: center;
+    box-shadow: #111111 4px 4px 10px;
+    vertical-align: middle;
+    border-radius: 4vw;
+    overflow: hidden;
+}
+.slide1 > img, .slide2 > img, .slide3 >img, .slide4 >img{
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+.prev, .next{
+    position: absolute;
+    font-size: 2vw;
+    padding: 1.5vw;
+    top: 37%;
+    color: #000000;
+    cursor: pointer;   
+}
+.prev:hover, .next:hover{
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.next{
+    right: 6%;
+}
+.prev{
+    left: 6%;
+}
+@media screen and (max-width: 800px){
+    .galleryColumn{
+        width: 50%;
+    }
+    .slide1, .slide2, .slide3, .slide4{
+        height: 30vw;
+    }
+    .galleryColumn > h4{
+        font-size: 3vw;
+    }
+    .prev, .next{
+        position: absolute;
+        font-size: 4vw;
+        padding: 2vw;
+        top: 35%;
+    }
+}
+@media screen and (max-width: 400px){
+    .galleryColumn{
+        width: 100%;
+    }
+    .slide1, .slide2, .slide3, .slide4{
+        height: 40vw;
+        width: 70%;
+        margin: 5% 15%;
+    }
+    .galleryColumn > h4{
+        font-size: 5vw;
+    }
+    .prev, .next{
+        position: absolute;
+        font-size: 6vw;
+        padding: 3vw;
+        top: 32%;
+    }
+    .next{
+        right: 16%;
+    }
+    .prev{
+        left: 16%;
+    }
+}
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+ /* ---------------------------Footer Section---------------------------------------- */
+#footer{
+    margin-top: 0.5rem;
+    background-color: #511c66;
+    vertical-align: middle;
+    padding: 1rem;
+    object-fit: contain;
+}
+.leftFooter{
+     font-size: 1.4vw;
+     color: #ffffff;
+     font-weight: 400;
+     display: inline;
+     float: left;
+}
+#footer > a > img{
+    width: 6.5vw;
+    margin-left: 2vw;
+}
+.rightFooter{
+    display: inline;
+    float: right;
+    margin-right: 5vw;
+    vertical-align: middle;
+    margin-top: 1vw;
+}
+.rightFooter > a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.4vw;
+    padding: 0.25vw 0.5vw;
+    border-right: #ffffff 1px solid;
+}
+@media screen and (max-width: 850px){
+    .leftFooter{
+        font-size: 1.8vw;
+    }
+    #footer > a > img{
+        width: 7.5vw;
+    }
+    .rightFooter{
+        margin-right: 7vw;   
+    }
+    .rightFooter > a{
+        font-size: 1.8vw;
+    }
+}
+@media screen and (max-width: 500px){
+    .leftFooter{
+        font-size: 2.5vw;
+    }
+    #footer > a > img{
+        width: 9vw;
+    }
+    .rightFooter{
+        display: block;   
+    }
+    .rightFooter > a{
+        font-size: 2.5vw;
+    }
+}
